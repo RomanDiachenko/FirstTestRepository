@@ -17,6 +17,10 @@ class LoginMailBox(unittest.TestCase):
         self.driver.maximize_window()
         self.login(driver, login="romareverse9", password="228228228ok")
         self.validate_login(driver)
+        self.mail_send(driver)
+        self.log_out_mail(driver)
+
+    def log_out_mail(self, driver):
         drop_bar = driver.find_element_by_css_selector(
             "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) header.header.animate div.header__login div.login div.login__login-button a.login-button > p.login-button__user")
         drop_bar.click()
@@ -35,6 +39,11 @@ class LoginMailBox(unittest.TestCase):
         button_login = driver.find_element_by_css_selector(
             'div.root:nth-child(1) div.app main.app__main form.form > button.button.button_style-main.button_size-regular.form__submit:nth-child(4)')
         button_login.click()
+
+    def mail_send(self, driver):
+        send_mail_button = driver.find_element_by_css_selector(
+            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div:nth-child(2) aside.sidebar > button.default.compose")
+        send_mail_button.click()
 
     def tearDown(self):
         self.driver.quit()
