@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_testUkrnetMail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="186" selection-start-line="20" selection-start-column="186" selection-end-line="20" selection-end-column="186" />
+            <state relative-caret-position="357">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -112,34 +112,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 37m 03s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 24m 15s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 37m 51s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 27m 57s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 43m 05s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 28m 53s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 43m 28s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 32m 15s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 46m 13s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 35m 40s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 47m 14s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 38m 38s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 47m 44s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 39m 03s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 48m 33s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 40m 59s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 49m 13s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 44m 47s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 11h 50m 39s.xml">
+    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.22 at 13h 46m 39s.xml">
       <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
     </history-entry>
   </component>
@@ -169,8 +169,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_testUkrnetMail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="186" selection-start-line="20" selection-start-column="186" selection-end-line="20" selection-end-column="186" />
+        <state relative-caret-position="357">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
