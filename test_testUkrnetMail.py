@@ -1,8 +1,9 @@
 import unittest
 from selenium import webdriver
 
-
 # импорт библиотек
+from selenium.webdriver.common.by import By
+
 
 class LoginMailBox(unittest.TestCase):
     def setUp(self):
@@ -24,8 +25,11 @@ class LoginMailBox(unittest.TestCase):
         self.log_out_mail(driver)
 
     def field_text(self, driver):
-        enter_text = driver.find_element_by_tag_name()
-        enter_text.send_keys("So long, long, long, long text from test")
+
+        top_frame
+        enter_text = driver.find_element(By.XPATH, "//body[@id='tinymce']")
+        enter_text.click()
+        enter_text.send_keys("text aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa")
 
     def enter_theme(self, driver):
         theme_field = driver.find_element_by_css_selector(
