@@ -24,7 +24,7 @@ class LoginMailBox(unittest.TestCase):
         self.log_out_mail(driver)
 
     def field_text(self, driver):
-        enter_text = driver.find_element_by_css_selector("#mceu_90")
+        enter_text = driver.find_element_by_tag_name()
         enter_text.send_keys("So long, long, long, long text from test")
 
     def enter_theme(self, driver):
