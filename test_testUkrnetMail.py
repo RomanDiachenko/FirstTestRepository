@@ -18,7 +18,24 @@ class LoginMailBox(unittest.TestCase):
         self.login(driver, login="romareverse9", password="228228228ok")
         self.validate_login(driver)
         self.mail_send(driver)
+        self.Fiend_addressee(driver)
+        self.enter_theme(driver)
+        self.field_text(driver)
         self.log_out_mail(driver)
+
+    def field_text(self, driver):
+        enter_text = driver.find_element_by_css_selector("#mceu_90")
+        enter_text.send_keys("So long, long, long, long text from test")
+
+    def enter_theme(self, driver):
+        theme_field = driver.find_element_by_css_selector(
+            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.sendmsg.screen div.screen__content section.sendmsg__form div.sendmsg__form-label:nth-child(4) div.sendmsg__form-label-field.subject > input.input")
+        theme_field.send_keys("Some text")
+
+    def Fiend_addressee(self, driver):
+        addressee_mail = driver.find_element_by_css_selector(
+            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.sendmsg.screen div.screen__content section.sendmsg__form div.sendmsg__form-label:nth-child(1) div.sendmsg__form-label-field.auto.cropped.ui-sortable:nth-child(4) > input.input:nth-child(2)")
+        addressee_mail.send_keys("romareverse9@gmail.com")
 
     def log_out_mail(self, driver):
         drop_bar = driver.find_element_by_css_selector(
