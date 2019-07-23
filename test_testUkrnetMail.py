@@ -1,17 +1,14 @@
 import time
 import unittest
 from selenium import webdriver
-
-
-# импорт библиотек
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 
 class LoginMailBox(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path='C:\Drivers\chromedriver.exe')
         self.driver.implicitly_wait(10)
-
-    # создаём класс, указываем путь к драйверу и выставляем timeout
 
     def test_testUkrnetMail(self):
         driver = self.driver
@@ -25,30 +22,44 @@ class LoginMailBox(unittest.TestCase):
         self.field_text(driver)
         self.send_message(driver)
         self.tab_test(driver)
+        self.search_mail(driver)
         self.log_out_mail(driver)
+
+    def search_mail(self, driver):
+        search = driver.find_element_by_xpath("//input[@placeholder='Пошук']")
+        search.send_keys("test")
+        search = ActionChains(driver)
+        search.send_keys(Keys.ENTER)
+        time.sleep(3)
+        search = driver.find_element_by_xpath("//a[1]//div[1]//span[1]")
+        search.click()
+        time.sleep(2)
+        search = driver.find_element_by_xpath("//a[@class='controls-link remove']")
+        search.click()
+        time.sleep(1)
 
     def tab_test(self, driver):
         incoming = driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']")
         incoming.click()
-        time.sleep(1)
+        time.sleep(0.5)
         drafts = driver.find_element_by_xpath("//a[@id='10002']//span[@class='sidebar__list-link-name']")
         drafts.click()
-        time.sleep(1)
+        time.sleep(0.5)
         sent = driver.find_element_by_xpath("//a[@id='10001']//span[@class='sidebar__list-link-name']")
         sent.click()
-        time.sleep(1)
+        time.sleep(0.5)
         spam = driver.find_element_by_xpath("//a[@id='10003']//span[@class='sidebar__list-link-name']")
         spam.click()
-        time.sleep(1)
+        time.sleep(0.5)
         deleted = driver.find_element_by_xpath("//a[@id='10004']//span[@class='sidebar__list-link-name']")
         deleted.click()
-        time.sleep(1)
+        time.sleep(0.5)
         unread = driver.find_element_by_xpath("//a[@id='unread']//span[@class='sidebar__list-link-name']")
         unread.click()
-        time.sleep(1)
+        time.sleep(0.5)
         marked = driver.find_element_by_xpath("//a[@id='marked']//span[@class='sidebar__list-link-name']")
         marked.click()
-        time.sleep(1)
+        time.sleep(0.5)
         link = driver.find_element_by_xpath(
             "//a[@class='sidebar__list-link files']//span[@class='sidebar__list-link-name']")
         link.click()
@@ -57,7 +68,7 @@ class LoginMailBox(unittest.TestCase):
     def send_message(self, driver):
         send_message_button = driver.find_element_by_xpath("//button[@class='default send']")
         send_message_button.click()
-        time.sleep(5)
+        time.sleep(2)
 
     def field_text(self, driver):
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
