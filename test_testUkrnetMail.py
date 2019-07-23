@@ -1,3 +1,4 @@
+import time
 import unittest
 from selenium import webdriver
 
@@ -22,7 +23,13 @@ class LoginMailBox(unittest.TestCase):
         self.Fiend_addressee(driver)
         self.enter_theme(driver)
         self.field_text(driver)
+        self.send_message(driver)
         self.log_out_mail(driver)
+
+    def send_message(self, driver):
+        send_message_button = driver.find_element_by_xpath("//button[@class='default send']")
+        send_message_button.click()
+        time.sleep(5)
 
     def field_text(self, driver):
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
