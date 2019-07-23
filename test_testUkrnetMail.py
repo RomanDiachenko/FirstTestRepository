@@ -35,18 +35,15 @@ class LoginMailBox(unittest.TestCase):
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
 
     def enter_theme(self, driver):
-        theme_field = driver.find_element_by_css_selector(
-            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.sendmsg.screen div.screen__content section.sendmsg__form div.sendmsg__form-label:nth-child(4) div.sendmsg__form-label-field.subject > input.input")
+        theme_field = driver.find_element_by_xpath("//input[@name='subject']")
         theme_field.send_keys("Some text")
 
     def Fiend_addressee(self, driver):
-        addressee_mail = driver.find_element_by_css_selector(
-            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.sendmsg.screen div.screen__content section.sendmsg__form div.sendmsg__form-label:nth-child(1) div.sendmsg__form-label-field.auto.cropped.ui-sortable:nth-child(4) > input.input:nth-child(2)")
+        addressee_mail = driver.find_element_by_xpath("//input[@name='toFieldInput']")
         addressee_mail.send_keys("romareverse9@gmail.com")
 
     def log_out_mail(self, driver):
-        drop_bar = driver.find_element_by_css_selector(
-            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) header.header.animate div.header__login div.login div.login__login-button a.login-button > p.login-button__user")
+        drop_bar = driver.find_element_by_xpath("//a[@class='login-button']")
         drop_bar.click()
         log_out = driver.find_element_by_id("login__logout")
         log_out.click()
@@ -60,13 +57,12 @@ class LoginMailBox(unittest.TestCase):
         login_field.send_keys(login)
         password_field = driver.find_element_by_id("id-p")
         password_field.send_keys(password)
-        button_login = driver.find_element_by_css_selector(
-            'div.root:nth-child(1) div.app main.app__main form.form > button.button.button_style-main.button_size-regular.form__submit:nth-child(4)')
+        button_login = driver.find_element_by_xpath(
+            "//button[@class='button button_style-main button_size-regular form__submit']")
         button_login.click()
 
     def mail_send(self, driver):
-        send_mail_button = driver.find_element_by_css_selector(
-            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div:nth-child(2) aside.sidebar > button.default.compose")
+        send_mail_button = driver.find_element_by_xpath("//button[@class='default compose']")
         send_mail_button.click()
 
     def tearDown(self):
