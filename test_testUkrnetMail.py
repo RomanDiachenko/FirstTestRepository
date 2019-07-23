@@ -15,94 +15,58 @@ class LoginMailBox(unittest.TestCase):
         driver.get("https://mail.ukr.net/desktop/login")
         self.driver.maximize_window()
         self.login(driver, login="romareverse9", password="228228228ok")
-        self.validate_login(driver)
         self.mail_send(driver)
-        self.Fiend_addressee(driver)
-        self.enter_theme(driver)
-        self.field_text(driver)
-        self.send_message(driver)
         self.tab_test(driver)
         self.search_mail(driver)
         self.log_out_mail(driver)
 
     def search_mail(self, driver):
-        search = driver.find_element_by_xpath("//input[@placeholder='Пошук']")
-        search.send_keys("test")
-        search = ActionChains(driver)
-        search.send_keys(Keys.ENTER)
+        driver.find_element_by_xpath("//input[@placeholder='Пошук']").send_keys("test")
+        ActionChains(driver).send_keys(Keys.ENTER)
         time.sleep(3)
-        search = driver.find_element_by_xpath("//a[1]//div[1]//span[1]")
-        search.click()
+        driver.find_element_by_xpath("//a[1]//div[1]//span[1]").click()
         time.sleep(2)
-        search = driver.find_element_by_xpath("//a[@class='controls-link remove']")
-        search.click()
+        driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(1)
 
     def tab_test(self, driver):
-        incoming = driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']")
-        incoming.click()
+        driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        drafts = driver.find_element_by_xpath("//a[@id='10002']//span[@class='sidebar__list-link-name']")
-        drafts.click()
+        driver.find_element_by_xpath("//a[@id='10002']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        sent = driver.find_element_by_xpath("//a[@id='10001']//span[@class='sidebar__list-link-name']")
-        sent.click()
+        driver.find_element_by_xpath("//a[@id='10001']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        spam = driver.find_element_by_xpath("//a[@id='10003']//span[@class='sidebar__list-link-name']")
-        spam.click()
+        driver.find_element_by_xpath("//a[@id='10003']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        deleted = driver.find_element_by_xpath("//a[@id='10004']//span[@class='sidebar__list-link-name']")
-        deleted.click()
+        driver.find_element_by_xpath("//a[@id='10004']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        unread = driver.find_element_by_xpath("//a[@id='unread']//span[@class='sidebar__list-link-name']")
-        unread.click()
+        driver.find_element_by_xpath("//a[@id='unread']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        marked = driver.find_element_by_xpath("//a[@id='marked']//span[@class='sidebar__list-link-name']")
-        marked.click()
+        driver.find_element_by_xpath("//a[@id='marked']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
-        link = driver.find_element_by_xpath(
-            "//a[@class='sidebar__list-link files']//span[@class='sidebar__list-link-name']")
-        link.click()
+        driver.find_element_by_xpath(
+            "//a[@class='sidebar__list-link files']//span[@class='sidebar__list-link-name']").click()
         time.sleep(1)
 
-    def send_message(self, driver):
-        send_message_button = driver.find_element_by_xpath("//button[@class='default send']")
-        send_message_button.click()
-        time.sleep(2)
-
-    def field_text(self, driver):
-        driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
-
-    def enter_theme(self, driver):
-        theme_field = driver.find_element_by_xpath("//input[@name='subject']")
-        theme_field.send_keys("Some text")
-
-    def Fiend_addressee(self, driver):
-        addressee_mail = driver.find_element_by_xpath("//input[@name='toFieldInput']")
-        addressee_mail.send_keys("romareverse9@gmail.com")
-
     def log_out_mail(self, driver):
-        drop_bar = driver.find_element_by_xpath("//a[@class='login-button']")
-        drop_bar.click()
-        log_out = driver.find_element_by_id("login__logout")
-        log_out.click()
+        driver.find_element_by_xpath("//a[@class='login-button']").click()
+        driver.find_element_by_id("login__logout").click()
 
-    def validate_login(self, driver):
+    def login(self, driver, login, password):
+        driver.find_element_by_id("id-l").send_keys(login)
+        driver.find_element_by_id("id-p").send_keys(password)
+        driver.find_element_by_xpath(
+            "//button[@class='button button_style-main button_size-regular form__submit']").click()
         user_mail = driver.find_element_by_xpath("//*[@class='login-button__user']")
         assert user_mail.text == "romareverse9@ukr.net"
 
-    def login(self, driver, login, password):
-        login_field = driver.find_element_by_id("id-l")
-        login_field.send_keys(login)
-        password_field = driver.find_element_by_id("id-p")
-        password_field.send_keys(password)
-        button_login = driver.find_element_by_xpath(
-            "//button[@class='button button_style-main button_size-regular form__submit']")
-        button_login.click()
-
     def mail_send(self, driver):
-        send_mail_button = driver.find_element_by_xpath("//button[@class='default compose']")
-        send_mail_button.click()
+        driver.find_element_by_xpath("//button[@class='default compose']").click()
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@gmail.com")
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys("Some text")
+        driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
+        driver.find_element_by_xpath("//button[@class='default send']").click()
+        time.sleep(2)
 
     def tearDown(self):
         self.driver.quit()
