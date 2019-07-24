@@ -8,8 +8,8 @@ class SessionHelper:
 
     def login(self, login, password):
         driver = self.app.driver
-        driver.find_element_by_id("id-l").send_keys(login)
-        driver.find_element_by_id("id-p").send_keys(password)
+        driver.find_element_by_xpath("//input[@id='id-l']").send_keys(login)
+        driver.find_element_by_xpath("//input[@id='id-p']").send_keys(password)
         driver.find_element_by_xpath(
             "//button[@class='button button_style-main button_size-regular form__submit']").click()
         user_mail = driver.find_element_by_xpath("//*[@class='login-button__user']")

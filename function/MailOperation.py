@@ -27,3 +27,18 @@ class MailOperation:
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
         driver.find_element_by_xpath("//button[@class='default send']").click()
         time.sleep(2)
+
+    def write_draft(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//button[@class='default compose']").click()
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@gmail.com")
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys("Some text")
+        driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
+        driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']").click()
+        time.sleep(2)
+
+    def delete_draft(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
+        time.sleep(1)
+        driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
