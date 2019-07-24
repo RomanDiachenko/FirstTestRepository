@@ -11,22 +11,25 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_testUkrnetMail.py">
+        <entry file="file://$PROJECT_DIR$/Test/test_testUkrnetMail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="306">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.py">
+        <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,6 +54,8 @@
         <option value="$PROJECT_DIR$/tese4444.py" />
         <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/test_testUkrnetMail.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/Test/test_testUkrnetMail.py" />
       </list>
     </option>
   </component>
@@ -73,6 +78,16 @@
               <item name="FirstTestRepository" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstTestRepository" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FirstTestRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstTestRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="fixture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstTestRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstTestRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -83,6 +98,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/git-cmd.exe" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub repository\FirstTestRepository\Test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -96,8 +116,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test_testUkrnetMail.py">
+    <configuration name="Unittests for Test.test_testUkrnetMail" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="FirstTestRepository" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,14 +126,52 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box&quot;" />
+      <option name="_new_target" value="&quot;Test.test_testUkrnetMail&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_testUkrnetMail.test_testUkrnetMail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="FirstTestRepository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_testUkrnetMail.test_testUkrnetMail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_testUkrnetMail.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="FirstTestRepository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_testUkrnetMail.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests for Test.test_testUkrnetMail" />
+      <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
+      <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" />
+        <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
+        <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
+        <item itemvalue="Python tests.Unittests for Test.test_testUkrnetMail" />
       </list>
     </recent_temporary>
   </component>
@@ -131,35 +189,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 36m 21s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 23m 08s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 43m 14s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 31m 03s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 44m 06s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 46m 55s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 44m 16s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 47m 32s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 46m 23s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 48m 19s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 46m 48s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="Unittests_for_Test_test_testUkrnetMail - 2019.07.24 at 10h 49m 02s.xml">
+      <configuration name="Unittests for Test.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 08h 47m 28s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="pytest_for_test_testUkrnetMail_test_testUkrnetMail - 2019.07.24 at 10h 49m 03s.xml">
+      <configuration name="pytest for test_testUkrnetMail.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 09h 16m 33s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="pytest_for_test_testUkrnetMail_test_testUkrnetMail - 2019.07.24 at 10h 49m 41s.xml">
+      <configuration name="pytest for test_testUkrnetMail.test_testUkrnetMail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 09h 17m 42s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="pytest_in_test_testUkrnetMail_py - 2019.07.24 at 10h 51m 28s.xml">
+      <configuration name="pytest in test_testUkrnetMail.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_testUkrnetMail_LoginMailBox_test_user_login_in_mail_box - 2019.07.24 at 09h 18m 42s.xml">
-      <configuration name="Unittests for test_testUkrnetMail.LoginMailBox.test_user_login_in_mail_box" configurationId="tests" />
+    <history-entry file="pytest_in_test_testUkrnetMail_py - 2019.07.24 at 10h 52m 06s.xml">
+      <configuration name="pytest in test_testUkrnetMail.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -171,7 +229,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29698858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49428868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -220,12 +278,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_testUkrnetMail.py">
+    <entry file="file://$PROJECT_DIR$/Test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test_testUkrnetMail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,24 +1,20 @@
 import time
-import unittest
+
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 
 
-class LoginMailBox(unittest.TestCase):
-    def setUp(self):
+class Application:
+
+    def __init__(self):
         self.driver = webdriver.Chrome(executable_path='C:\Drivers\chromedriver.exe')
         self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
 
-    def test_testUkrnetMail(self):
+    def open_page(self):
         driver = self.driver
         driver.get("https://mail.ukr.net/desktop/login")
-        self.driver.maximize_window()
-        self.login(login="romareverse9", password="228228228ok")
-        self.mail_send()
-        self.tab_test()
-        self.search_mail()
-        self.log_out_mail()
 
     def search_mail(self):
         driver = self.driver
@@ -74,8 +70,5 @@ class LoginMailBox(unittest.TestCase):
         driver.find_element_by_xpath("//button[@class='default send']").click()
         time.sleep(2)
 
-    def tearDown(self):
+    def destroy(self):
         self.driver.quit()
-
-        if __name__ == "__main__":
-            unittest.main()
