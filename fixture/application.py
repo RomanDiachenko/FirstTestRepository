@@ -4,6 +4,8 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 
+from fixture.session import SessionHelper
+
 
 class Application:
 
@@ -11,6 +13,7 @@ class Application:
         self.driver = webdriver.Chrome(executable_path='C:\Drivers\chromedriver.exe')
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
+        self.session = SessionHelper(self)
 
     def open_page(self):
         driver = self.driver
@@ -46,20 +49,7 @@ class Application:
             "//a[@class='sidebar__list-link files']//span[@class='sidebar__list-link-name']").click()
         time.sleep(1)
 
-    def log_out_mail(self):
-        driver = self.driver
-        driver.find_element_by_xpath("//a[@class='login-button']").click()
-        time.sleep(1)
-        driver.find_element_by_id("login__logout").click()
 
-    def login(self, login, password):
-        driver = self.driver
-        driver.find_element_by_id("id-l").send_keys(login)
-        driver.find_element_by_id("id-p").send_keys(password)
-        driver.find_element_by_xpath(
-            "//button[@class='button button_style-main button_size-regular form__submit']").click()
-        user_mail = driver.find_element_by_xpath("//*[@class='login-button__user']")
-        assert user_mail.text == "romareverse9@ukr.net"
 
     def mail_send(self):
         driver = self.driver
