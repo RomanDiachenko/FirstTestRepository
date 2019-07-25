@@ -1,3 +1,5 @@
+# login, crate and send mail, switch tabs, search email and log out.
+# Run file
 def test_testUkrnetMail(app):
     app.open_page()
     app.session.login(login="romareverse9", password="228228228ok")

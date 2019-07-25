@@ -1,6 +1,8 @@
 import time
 
 
+# modify draft name
+# Run file
 def test_modifydrafts_name(app):
     app.open_page()
     app.session.login(login="romareverse9", password="228228228ok")
@@ -12,6 +14,7 @@ def test_modifydrafts_name(app):
     time.sleep(1)
     app.session.log_out_mail()
 
+# modify draft subject
 def test_modifydrafts_theme(app):
     app.open_page()
     app.session.login(login="romareverse9", password="228228228ok")

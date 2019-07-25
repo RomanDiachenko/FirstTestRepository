@@ -1,6 +1,8 @@
 import time
 
 
+# Login, write draft, delete draft and log out.
+# Run file
 def test_draft_test(app):
     app.open_page()
     app.session.login(login="romareverse9", password="228228228ok")

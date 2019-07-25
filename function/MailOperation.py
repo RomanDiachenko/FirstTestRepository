@@ -9,6 +9,7 @@ class MailOperation:
     def __init__(self, app):
         self.app = app
 
+# Search and choose first mail
     def search_mail(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//input[@placeholder='Пошук']").send_keys("test")
@@ -19,6 +20,7 @@ class MailOperation:
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(1)
 
+# Create and send mail
     def mail_send(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//button[@class='default compose']").click()
@@ -28,6 +30,7 @@ class MailOperation:
         driver.find_element_by_xpath("//button[@class='default send']").click()
         time.sleep(2)
 
+# Create draft
     def write_draft(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//button[@class='default compose']").click()
@@ -37,12 +40,14 @@ class MailOperation:
         driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']").click()
         time.sleep(2)
 
+# Delete drafts
     def delete_draft(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
 
+# Change mail addressee
     def rename_drafts(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
@@ -53,6 +58,7 @@ class MailOperation:
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
 
+# Change mail subject
     def rename_theme_drafts(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
