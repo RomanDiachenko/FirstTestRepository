@@ -13,17 +13,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/test_testUkrnetMail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/test_drafttest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="187">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -37,11 +37,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/test_modifydrafts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/function/MailOperation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+            <state relative-caret-position="337">
+              <caret line="61" column="89" selection-start-line="61" selection-start-column="89" selection-end-line="61" selection-end-column="89" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -52,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/function/tabtap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="320">
+              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -112,14 +121,15 @@
         <option value="$PROJECT_DIR$/fixture/MailOperation.py" />
         <option value="$PROJECT_DIR$/Test/conftest.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
-        <option value="$PROJECT_DIR$/function/tabtap.py" />
         <option value="$PROJECT_DIR$/Test/Drafts_test.py" />
         <option value="$PROJECT_DIR$/Test/test_drafts_test.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/function/session.py" />
         <option value="$PROJECT_DIR$/Test/test_testUkrnetMail.py" />
         <option value="$PROJECT_DIR$/Test/test_drafttest.py" />
+        <option value="$PROJECT_DIR$/function/tabtap.py" />
         <option value="$PROJECT_DIR$/function/MailOperation.py" />
+        <option value="$PROJECT_DIR$/Test/test_modifydrafts.py" />
       </list>
     </option>
   </component>
@@ -188,6 +198,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.pytest in Test">
+    <configuration name="tabtap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstTestRepository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function/tabtap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_drafttest.test_draft_test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="FirstTestRepository" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,21 +231,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_drafttest.test_draft_test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_testUkrnetMail.test_testUkrnetMail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="FirstTestRepository" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_testUkrnetMail.test_testUkrnetMail&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -233,7 +249,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_drafttest.py" type="tests" factoryName="py.test" singleton="false" temporary="true">
+    <configuration name="pytest in test_modifydrafts.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="FirstTestRepository" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,7 +260,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_drafttest.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_modifydrafts.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -265,18 +281,18 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
-      <item itemvalue="Python tests.pytest in test_drafttest.py" />
       <item itemvalue="Python tests.pytest for test_drafttest.test_draft_test" />
-      <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
       <item itemvalue="Python tests.pytest in Test" />
+      <item itemvalue="Python tests.pytest in test_modifydrafts.py" />
+      <item itemvalue="Python.tabtap" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in Test" />
+        <item itemvalue="Python tests.pytest in test_modifydrafts.py" />
+        <item itemvalue="Python.tabtap" />
         <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
         <item itemvalue="Python tests.pytest for test_drafttest.test_draft_test" />
-        <item itemvalue="Python tests.pytest in test_drafttest.py" />
-        <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
       </list>
     </recent_temporary>
   </component>
@@ -294,35 +310,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_Test - 2019.07.24 at 16h 18m 37s.xml">
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 44m 50s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 46m 15s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 47m 26s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 48m 19s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 48m 52s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 54m 27s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 55m 28s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 55m 51s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modifydrafts_py - 2019.07.25 at 09h 56m 43s.xml">
+      <configuration name="pytest in test_modifydrafts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_Test - 2019.07.25 at 09h 58m 22s.xml">
       <configuration name="pytest in Test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 19m 24s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 20m 36s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_drafttest_py - 2019.07.24 at 16h 21m 21s.xml">
-      <configuration name="pytest in test_drafttest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_drafttest_py - 2019.07.24 at 16h 22m 20s.xml">
-      <configuration name="pytest in test_drafttest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_drafttest_py - 2019.07.24 at 16h 22m 50s.xml">
-      <configuration name="pytest in test_drafttest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 23m 25s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 26m 24s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 27m 12s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_drafttest_test_draft_test - 2019.07.24 at 16h 28m 21s.xml">
-      <configuration name="pytest for test_drafttest.test_draft_test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -381,30 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/tabtap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -417,25 +409,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/test_testUkrnetMail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state>
+          <caret column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function/MailOperation.py">
+    <entry file="file://$PROJECT_DIR$/function/tabtap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/test_drafttest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/MailOperation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="61" column="89" selection-start-line="61" selection-start-column="89" selection-end-line="61" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test_modifydrafts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>

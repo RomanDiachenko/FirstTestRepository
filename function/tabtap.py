@@ -30,3 +30,8 @@ class TabTap:
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@id='10002']//span[@class='sidebar__list-link-name']").click()
         time.sleep(0.5)
+
+    def open_drafts(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@class='msglist__row_href']")
+        time.sleep(1)

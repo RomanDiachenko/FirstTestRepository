@@ -42,3 +42,21 @@ class MailOperation:
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
+
+    def rename_drafts(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
+        time.sleep(1)
+        driver.find_element_by_xpath("//span[@class='autocomplete__remove']").click()
+        time.sleep(1)
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@ukr.net")
+        time.sleep(1)
+        driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
+
+    def rename_theme_drafts(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
+        time.sleep(1)
+        driver.find_element_by_xpath("//input[@name='subject']").clear()
+        time.sleep(1)
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys("new subject")
