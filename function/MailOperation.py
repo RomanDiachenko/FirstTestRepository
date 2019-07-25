@@ -24,9 +24,11 @@ class MailOperation:
     def mail_send(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//button[@class='default compose']").click()
+        time.sleep(2)
         driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@gmail.com")
         driver.find_element_by_xpath("//input[@name='subject']").send_keys("Some text")
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
+        time.sleep(1)
         driver.find_element_by_xpath("//button[@class='default send']").click()
         time.sleep(2)
 

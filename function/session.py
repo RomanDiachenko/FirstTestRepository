@@ -1,7 +1,6 @@
 import time
 
 
-# Login, logout function
 class SessionHelper:
 
     def __init__(self, app):
