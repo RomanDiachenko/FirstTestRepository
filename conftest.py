@@ -11,12 +11,11 @@ def app(request):
     if fixture is None:
         fixture = Application()
         fixture.open_page()
-        fixture.session.login(login="romareverse9", password="228228228ok")
     else:
         if not fixture.is_valid():
             fixture = Application()
             fixture.open_page()
-            fixture.session.login(login="romareverse9", password="228228228ok")
+    fixture.session.login(login="romareverse9", password="228228228ok")
 
     return fixture
 

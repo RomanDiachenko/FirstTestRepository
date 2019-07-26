@@ -20,3 +20,5 @@ class SessionHelper:
         driver.find_element_by_xpath("//a[@class='login-button']").click()
         time.sleep(1)
         driver.find_element_by_id("login__logout").click()
+
+

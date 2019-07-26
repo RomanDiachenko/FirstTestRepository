@@ -9,7 +9,7 @@ class Application:
 
     def __init__(self):
         self.driver = webdriver.Chrome(executable_path='C:\Drivers\chromedriver.exe')
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(5)
         self.driver.maximize_window()
         self.session = SessionHelper(self)
         self.tabtap = TabTap(self)
