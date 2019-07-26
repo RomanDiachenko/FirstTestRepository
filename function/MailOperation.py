@@ -21,23 +21,23 @@ class MailOperation:
         time.sleep(1)
 
 # Create and send mail
-    def mail_send(self):
+    def mail_send(self, name, subject):
         driver = self.app.driver
         driver.find_element_by_xpath("//button[@class='default compose']").click()
         time.sleep(2)
-        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@gmail.com")
-        driver.find_element_by_xpath("//input[@name='subject']").send_keys("Some text")
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys(name)
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys(subject)
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
         time.sleep(1)
         driver.find_element_by_xpath("//button[@class='default send']").click()
         time.sleep(2)
 
 # Create draft
-    def write_draft(self):
+    def write_draft(self, name, subject):
         driver = self.app.driver
         driver.find_element_by_xpath("//button[@class='default compose']").click()
-        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@gmail.com")
-        driver.find_element_by_xpath("//input[@name='subject']").send_keys("Some text")
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys(name)
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys(subject)
         driver.execute_script("tinyMCE.activeEditor.setContent('%s')" % "some text from this test case")
         driver.find_element_by_xpath("//a[@id='0']//span[@class='sidebar__list-link-name']").click()
         time.sleep(2)
@@ -50,21 +50,21 @@ class MailOperation:
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
 
 # Change mail addressee
-    def rename_drafts(self):
+    def rename_drafts(self, new_name):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
         time.sleep(1)
         driver.find_element_by_xpath("//span[@class='autocomplete__remove']").click()
         time.sleep(1)
-        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys("romareverse9@ukr.net")
+        driver.find_element_by_xpath("//input[@name='toFieldInput']").send_keys(new_name)
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
 
 # Change mail subject
-    def rename_theme_drafts(self):
+    def rename_theme_drafts(self, new_subject):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']").click()
         time.sleep(1)
         driver.find_element_by_xpath("//input[@name='subject']").clear()
         time.sleep(1)
-        driver.find_element_by_xpath("//input[@name='subject']").send_keys("new subject")
+        driver.find_element_by_xpath("//input[@name='subject']").send_keys(new_subject)
