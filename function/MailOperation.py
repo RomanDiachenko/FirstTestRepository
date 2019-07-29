@@ -69,13 +69,15 @@ class MailOperation:
         time.sleep(1)
         driver.find_element_by_xpath("//input[@name='subject']").send_keys(new_subject)
 
+    # Go to mail history and delete lust mail
     def choose_mail(self):
         driver = self.app.driver
-        driver.find_element_by_xpath("//tr[@id='msg15641224113199512172']//input").click()
+        driver.find_element_by_xpath(
+            "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]").click()
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link more']").click()
-        time.sleep(1)
-        driver.find_element_by_xpath("//a[@class='link2 showCorrespondence']").click()
+        time.sleep(2)
+        driver.find_element_by_xpath("//a[contains(@class,'link2 showCorrespondence')]").click()
         time.sleep(1)
         driver.find_element_by_css_selector(
             "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.msglist div.screen__content table.noselect tbody:nth-child(3) tr.msglist__row.icon0.ui-draggable:nth-child(1) td.msglist__row-check label.checkbox.noselect > input:nth-child(1)").click()
@@ -83,13 +85,14 @@ class MailOperation:
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(1)
 
+    # Get favourite mail
     def set_favourite_mail(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//span[@class='msglist__row-address-wrap']").click()
         time.sleep(1)
 
+    # delete favourite mail
     def delete_favourite_mail(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(2)
-

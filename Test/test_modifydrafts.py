@@ -5,7 +5,7 @@ import time
 # Run file
 def test_modifydrafts_name(app):
     app.tabtap.go_to_drafts()
-    app.mail_operation.write_draft(name="romareverse9@gmail.com", subject="Some text")
+    app.mail_operation.write_draft("romareverse9@gmail.com", "Some text")
     app.tabtap.go_to_drafts()
     app.tabtap.open_drafts()
     app.mail_operation.rename_drafts("romareverse9@ukr.net")
@@ -13,7 +13,7 @@ def test_modifydrafts_name(app):
 # modify draft subject
 def test_modifydrafts_theme(app):
     app.tabtap.go_to_drafts()
-    app.mail_operation.write_draft(name="romareverse9@gmail.com", subject="Some text")
+    app.mail_operation.write_draft("romareverse9@gmail.com", "Some text")
     app.tabtap.go_to_drafts()
     app.tabtap.open_drafts()
     app.mail_operation.rename_theme_drafts("new subject")
