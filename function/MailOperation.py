@@ -82,3 +82,14 @@ class MailOperation:
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(1)
+
+    def set_favourite_mail(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//span[@class='msglist__row-address-wrap']").click()
+        time.sleep(1)
+
+    def delete_favourite_mail(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
+        time.sleep(2)
+

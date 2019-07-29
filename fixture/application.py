@@ -3,6 +3,7 @@ from selenium import webdriver
 from function.MailOperation import MailOperation
 from function.session import SessionHelper
 from function.tabtap import TabTap
+from selenium.common.exceptions import NoSuchElementException
 
 
 class Application:
@@ -14,6 +15,14 @@ class Application:
         self.session = SessionHelper(self)
         self.tabtap = TabTap(self)
         self.mail_operation = MailOperation(self)
+
+    def check_exists_by_xpath(xpath):
+        driver = xpath.driver
+        try:
+            driver.find_element_by_xpath(xpath)
+        except NoSuchElementException:
+            return False
+        return True
 
     def is_valid(self):
         try:
