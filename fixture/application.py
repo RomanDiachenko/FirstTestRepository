@@ -2,6 +2,7 @@ from selenium import webdriver
 
 from function.MailOperation import MailOperation
 from function.session import SessionHelper
+from function.contact import Contact
 from function.tabtap import TabTap
 from selenium.common.exceptions import NoSuchElementException
 
@@ -15,6 +16,7 @@ class Application:
         self.session = SessionHelper(self)
         self.tabtap = TabTap(self)
         self.mail_operation = MailOperation(self)
+        self.new_contact = Contact(self)
 
     def check_exists_by_xpath(xpath):
         driver = xpath.driver
