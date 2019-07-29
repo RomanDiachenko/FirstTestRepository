@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c06a2f-b008-4173-8066-2a801f1a22f8" name="Default Changelist" comment="" />
+    <list default="true" id="74c06a2f-b008-4173-8066-2a801f1a22f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/test_go_to_sent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/MailOperation.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/MailOperation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/tabtap.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/tabtap.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Test">
-    <configuration name="pytest for test_testUkrnetMail.test_testUkrnetMail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="FirstTestRepository" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_testUkrnetMail.test_testUkrnetMail&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest in test_go_to_sent.py">
     <configuration name="pytest in Test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="FirstTestRepository" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +82,21 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_drafttest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_go_to_sent.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="FirstTestRepository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_go_to_sent.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -129,16 +134,16 @@
       <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
       <item itemvalue="Python tests.pytest in Test" />
       <item itemvalue="Python tests.pytest in test_modifydrafts.py" />
-      <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
       <item itemvalue="Python tests.pytest in test_drafttest.py" />
+      <item itemvalue="Python tests.pytest in test_go_to_sent.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_go_to_sent.py" />
+        <item itemvalue="Python tests.pytest in test_modifydrafts.py" />
         <item itemvalue="Python tests.pytest in Test" />
         <item itemvalue="Python tests.pytest in test_drafttest.py" />
         <item itemvalue="Python tests.pytest in test_testUkrnetMail.py" />
-        <item itemvalue="Python tests.pytest in test_modifydrafts.py" />
-        <item itemvalue="Python tests.pytest for test_testUkrnetMail.test_testUkrnetMail" />
       </list>
     </recent_temporary>
   </component>

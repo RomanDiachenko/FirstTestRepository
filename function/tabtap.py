@@ -38,3 +38,9 @@ class TabTap:
         driver = self.app.driver
         driver.find_element_by_xpath("//a[@class='msglist__row_href']")
         time.sleep(1)
+
+# Open send mail
+    def open_set_mail(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//a[@id='10001']//span[@class='sidebar__list-link-name']").click()
+        time.sleep(2)
