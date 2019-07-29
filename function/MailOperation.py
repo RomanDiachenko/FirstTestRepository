@@ -77,8 +77,8 @@ class MailOperation:
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='link2 showCorrespondence']").click()
         time.sleep(1)
-        driver.find_element_by_xpath(
-            "//tr[@id='msg15643834904169962787']//a[@class='msglist__row_href'][contains(text(),'Some text')]").click()
+        driver.find_element_by_css_selector(
+            "body.theme-white:nth-child(2) div.contacts-shown:nth-child(1) div.animate div.msglist div.screen__content table.noselect tbody:nth-child(3) tr.msglist__row.icon0.ui-draggable:nth-child(1) td.msglist__row-check label.checkbox.noselect > input:nth-child(1)").click()
         time.sleep(1)
         driver.find_element_by_xpath("//a[@class='controls-link remove']").click()
         time.sleep(1)
